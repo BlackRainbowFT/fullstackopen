@@ -1,0 +1,9 @@
+note over browser:
+1) user inputs text and clicks on the form button.
+2) the new note is added to the local list of notes and is rerendered.
+3) the data is sent to /exampleapp/new_note_spa  as JSON data containing both the note and the timestamp.
+end note
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+note over server:
+HTTP status code 201: resource successfully created on the server
+end note
